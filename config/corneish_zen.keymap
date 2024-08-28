@@ -1,3 +1,27 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
+
+
+#define DEFAULT 0
+#define NAV     1
+#define MOUSE   2
+#define MEDIA   3
+#define NUM     4
+#define SYM     5
+#define FUN     6
+#define ADJUST  7
+
 default_layer {
     bindings = <
         &kp Q       &kp W       &kp E       &kp R       &kp T       &kp TAB         &kp BSPC    &kp Y       &kp U       &kp I       &kp O       &kp P
