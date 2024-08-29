@@ -34,6 +34,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        rightclose {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <10 11>;
+        };
+
+        leftclose {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <9 10>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,9 +71,9 @@
 
         mouse_layer {
             bindings = <
-&trans  &none     &none     &none      &none      &none     &mkp MB4   &mkp LCLK  &mkp RCLK  &mkp MB5   &none      &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LEFT   &kp DOWN   &kp DOWN   &kp RIGHT  &none      &trans
-&trans  &none     &none     &none      &none      &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PG_UP  &kp PG_DN  &trans
+&trans  &none     &none     &none      &none      &none     &mkp MB4   &mkp LCLK  &mkp RCLK  &mkp MB5   &kp K_SCROLL_UP    &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LEFT   &kp DOWN   &kp DOWN   &kp RIGHT  &kp K_SCROLL_DOWN  &trans
+&trans  &none     &none     &none      &none      &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp PG_UP  &kp PG_DN          &trans
                             &trans     &trans     &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
         };
@@ -102,10 +116,10 @@
 
         adjust_layer {
             bindings = <
-&kp LG(W)  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4         &rgb_ug RGB_TOG                   &rgb_ug RGB_EFF                    &rgb_ug RGB_HUI                    &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                  &trans
-&trans     &trans        &trans         &trans         &none         &ext_power EP_TOG    &rgb_ug RGB_SPI                   &rgb_ug RGB_SPD                    &rgb_ug RGB_HUD                    &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                  &trans
-&trans     &kp LG(W)     &kp LG(LC(B))  &kp LG(LA(B))  &none         &ext_power EP_ON     &rgb_ug RGB_COLOR_HSB(25,100,68)  &rgb_ug RGB_COLOR_HSB(189,100,85)  &rgb_ug RGB_COLOR_HSB(103,100,76)  &rgb_ug RGB_COLOR_HSB(302,100,69)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(69,85,72)
-                                        &bt BT_CLR     &out OUT_USB  &out OUT_BLE         &ext_power EP_TOG                 &trans                             &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4         &rgb_ug RGB_TOG                   &rgb_ug RGB_EFF                    &rgb_ug RGB_HUI                    &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                  &trans
+&trans  &trans        &trans         &trans         &none         &ext_power EP_TOG    &rgb_ug RGB_SPI                   &rgb_ug RGB_SPD                    &rgb_ug RGB_HUD                    &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                  &trans
+&trans  &kp LG(W)     &kp LG(LC(B))  &kp LG(LA(B))  &none         &ext_power EP_ON     &rgb_ug RGB_COLOR_HSB(25,100,68)  &rgb_ug RGB_COLOR_HSB(189,100,85)  &rgb_ug RGB_COLOR_HSB(103,100,76)  &rgb_ug RGB_COLOR_HSB(302,100,69)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(69,85,72)
+                                     &bt BT_CLR     &out OUT_USB  &out OUT_BLE         &ext_power EP_TOG                 &trans                             &trans
             >;
         };
     };
