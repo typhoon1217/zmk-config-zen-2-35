@@ -53,18 +53,18 @@
 
         default_layer {
             bindings = <
-&kp TAB                  &kp Q       &kp W       &kp E        &kp R            &kp T            &kp Y        &kp U         &kp I                 &kp O       &kp P          &kp BSPC
-&kp ESC                  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F      &kp G            &lt 7 H      &hm RSHFT J   &hm RCTRL K           &hm RALT L  &hm RGUI QUOT  &kp SQT
-&lt ADJUST LANG_HANGEUL  &kp Z       &kp X       &kp C        &kp V            &kp B            &kp N        &kp M         &kp COMMA             &kp DOT     &kp SLASH      &kp RSHFT
-                                                 &lt NAV ESC  &lt MOUSE SPACE  &lt MEDIA TAB    &lt SYM RET  &lt NUM BSPC  &lt FUN LANG_HANGEUL
+&kp TAB                  &kp Q       &kp W       &kp E        &kp R            &kp T            &kp Y        &kp U         &kp I           &kp O       &kp P          &kp BSPC
+&kp ESC                  &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F      &kp G            &lt 7 H      &hm RSHFT J   &hm RCTRL K     &hm RALT L  &hm RGUI QUOT  &kp SQT
+&lt ADJUST LANG_HANGEUL  &kp Z       &kp X       &kp C        &kp V            &kp B            &kp N        &kp M         &kp COMMA       &kp DOT     &kp SLASH      &kp RSHFT
+                                                 &lt NAV ESC  &lt MOUSE SPACE  &lt MEDIA TAB    &lt SYM RET  &lt NUM BSPC  &lt FUN DELETE
             >;
         };
 
         nav_layer {
             bindings = <
-&kp LG(TAB)             &kp LG(Q)       &kp LG(D)     &kp LG(E)     &kp LG(F)   &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp INS       &trans
-&kp LG(LS(LEFT_SHIFT))  &kp LGUI        &kp LALT      &kp LCTRL     &kp LSHFT   &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp CAPSLOCK  &trans
-&kp LG(U)               &kp LEFT_SHIFT  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp RG(RIGHT)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)     &kp LG(LA(V))
+&kp LG(TAB)             &kp LG(Q)       &kp LG(D)     &kp LG(E)     &kp LG(F)   &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp CAPS          &trans
+&kp LG(LS(LEFT_SHIFT))  &kp LGUI        &kp LALT      &kp LCTRL     &kp LSHFT   &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LANG_HANGEUL  &trans
+&kp LG(U)               &kp LEFT_SHIFT  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp RG(RIGHT)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)         &kp LG(LA(V))
                                                       &trans        &trans      &trans           &trans      &trans          &trans
             >;
         };
