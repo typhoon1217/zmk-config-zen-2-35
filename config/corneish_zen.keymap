@@ -46,6 +46,55 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <9 10>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
+        };
+
+        clipboard {
+            bindings = <&kp LG(LA(V))>;
+            key-positions = <29 28>;
+        };
+
+        undo {
+            bindings = <&kp K_UNDO>;
+            key-positions = <24 25>;
+        };
+
+        redo {
+            bindings = <&kp K_REDO>;
+            key-positions = <25 26>;
+        };
+
+        leftPer {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <21 22>;
+        };
+
+        rightPer {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <22 23>;
+        };
+
+        hangle {
+            bindings = <&kp LANG_HANGEUL>;
+            key-positions = <41 40>;
+        };
+    };
+
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
