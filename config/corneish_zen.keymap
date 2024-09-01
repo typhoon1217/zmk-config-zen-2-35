@@ -145,10 +145,10 @@
 
         nav_layer {
             bindings = <
-&kp LG(TAB)             &kp LG(Q)  &kp LG(U)     &kp LG(LS(N))  &kp LG(F)   &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp DEL        &trans
-&kp LG(LS(LEFT_SHIFT))  &kp LGUI   &kp LALT      &kp LCTRL      &kp LSHFT   &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
-&kp LG(U)               &kp LCTRL  &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)  &kp RG(RIGHT)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp LG(LA(V))
-                                                 &kp LC(W)      &kp LC(W)   &kp LC(T)        &mkp LCLK   &mkp RCLK       &mkp MCLK
+&kp LG(TAB)             &kp LG(Q)           &kp LG(U)         &kp LG(LS(N))  &kp LG(F)      &kp LG(T)      &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp DEL        &trans
+&kp LG(LS(LEFT_SHIFT))  &kp LGUI            &kp LALT          &kp LCTRL      &kp LSHFT      &kp LG(RET)    &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&kp LG(U)               &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN)   &kp LG(RIGHT)  &kp LG(A)      &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp LG(LA(V))
+                                                              &kp LC(W)      &kp LC(W)      &kp LC(T)      &mkp LCLK   &mkp RCLK       &mkp MCLK
             >;
         };
 
