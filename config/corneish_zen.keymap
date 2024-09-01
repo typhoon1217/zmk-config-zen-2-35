@@ -39,22 +39,22 @@
 
         bsp {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
+            key-positions = <19 20>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <26 27>;
+            key-positions = <14 15>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <27 28>;
+            key-positions = <15 16>;
         };
 
         clipboard {
             bindings = <&kp LG(LA(V))>;
-            key-positions = <29 28>;
+            key-positions = <13 14>;
         };
 
         undo {
@@ -69,12 +69,12 @@
 
         cmdcopy {
             bindings = <&kp LC(LS(C))>;
-            key-positions = <26 27 36>;
+            key-positions = <36 14 15>;
         };
 
         cmdpaste {
             bindings = <&kp LC(LS(V))>;
-            key-positions = <27 28 36>;
+            key-positions = <36 15 16>;
         };
 
         semiq {
@@ -83,7 +83,7 @@
         };
 
         kor {
-            bindings = <&none>;
+            bindings = <&kp LANG_HANGEUL>;
             key-positions = <40 39>;
         };
 
@@ -95,6 +95,16 @@
         doubleqt {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <22 21>;
+        };
+
+        braketl {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <8 9>;
+        };
+
+        braketr {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <9 10>;
         };
     };
 
@@ -122,8 +132,8 @@
         inputlayer {
             bindings = <
 &trans  &none     &none     &none      &none      &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1        &kp RIGHT_SHIFT        &kp LCTRL         &kp SEMICOLON      &kp DQT        &trans
-&trans  &none     &none     &none      &none      &none     &kp LC(X)             &kp LC(C)              &kp LC(V)         &kp INSERT         &kp BACKSPACE  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1        &kp RIGHT_SHIFT        &kp LCTRL         &kp SEMICOLON      &kp BACKSPACE  &trans
+&trans  &none     &none     &none      &none      &none     &kp LC(Z)             &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp LC(Y)      &trans
                             &trans     &trans     &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
             >;
         };
