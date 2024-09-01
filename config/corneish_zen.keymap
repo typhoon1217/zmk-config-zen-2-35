@@ -39,22 +39,22 @@
 
         bsp {
             bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
+            key-positions = <22 21>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <14 15>;
+            key-positions = <2 3>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <15 16>;
+            key-positions = <3 4>;
         };
 
         clipboard {
             bindings = <&kp LG(LA(V))>;
-            key-positions = <13 14>;
+            key-positions = <1 2>;
         };
 
         undo {
@@ -69,17 +69,17 @@
 
         cmdcopy {
             bindings = <&kp LC(LS(C))>;
-            key-positions = <36 14 15>;
+            key-positions = <36 2 3>;
         };
 
         cmdpaste {
             bindings = <&kp LC(LS(V))>;
-            key-positions = <36 15 16>;
+            key-positions = <36 3 4>;
         };
 
         semiq {
             bindings = <&kp SQT>;
-            key-positions = <22 33>;
+            key-positions = <22 32>;
         };
 
         kor {
@@ -94,7 +94,7 @@
 
         doubleqt {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <22 32>;
+            key-positions = <22 33>;
         };
 
         braketl {
