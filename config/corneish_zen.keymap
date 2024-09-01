@@ -54,7 +54,7 @@
 
         clipboard {
             bindings = <&kp LG(LA(V))>;
-            key-positions = <1 2>;
+            key-positions = <5 4>;
         };
 
         undo {
