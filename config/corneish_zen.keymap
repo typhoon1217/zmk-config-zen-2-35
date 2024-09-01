@@ -79,7 +79,7 @@
 
         semiq {
             bindings = <&kp SQT>;
-            key-positions = <22 32>;
+            key-positions = <22 8>;
         };
 
         kor {
@@ -94,7 +94,7 @@
 
         doubleqt {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <22 33>;
+            key-positions = <22 9>;
         };
 
         braketl {
