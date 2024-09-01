@@ -91,6 +91,11 @@
             bindings = <&kp DEL>;
             key-positions = <2 1>;
         };
+
+        doubleqt {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <22 21>;
+        };
     };
 
     macros {
