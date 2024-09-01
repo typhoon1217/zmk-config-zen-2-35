@@ -111,10 +111,10 @@
 
         inputlayer {
             bindings = <
-&trans  &none     &none     &none      &none      &none     &kp LANGUAGE_1  &mkp LCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1  &kp RIGHT_SHIFT  &kp LCTRL         &kp SEMICOLON      &kp SQT        &trans
-&trans  &none     &none     &none      &none      &none     &kp LC(X)       &kp LC(C)        &kp LC(V)         &kp PG_UP          &kp PG_DN      &trans
-                            &trans     &trans     &trans    &mkp LCLK       &mkp RCLK        &trans
+&trans  &none     &none     &none      &none      &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1        &kp RIGHT_SHIFT        &kp LCTRL         &kp SEMICOLON      &kp DQT        &trans
+&trans  &none     &none     &none      &none      &none     &kp LC(X)             &kp LC(C)              &kp LC(V)         &kp INSERT         &kp BACKSPACE  &trans
+                            &trans     &trans     &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
             >;
         };
 
