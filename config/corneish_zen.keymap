@@ -86,6 +86,11 @@
             bindings = <&none>;
             key-positions = <40 39>;
         };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <2 1>;
+        };
     };
 
     macros {
