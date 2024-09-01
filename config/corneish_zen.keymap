@@ -81,6 +81,11 @@
             bindings = <&kp SEMI>;
             key-positions = <34 22>;
         };
+
+        kor {
+            bindings = <&none>;
+            key-positions = <40 39>;
+        };
     };
 
     macros {
@@ -106,18 +111,18 @@
 
         inputlayer {
             bindings = <
-&trans  &none     &none     &none      &none      &none     &kp LANGUAGE_1  &mkp LCLK       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1  &kp LANGUAGE_1  &kp LANGUAGE_1    &kp SEMICOLON      &kp SQT        &trans
-&trans  &none     &none     &none      &none      &none     &kp LC(X)       &kp LC(C)       &kp LC(V)         &kp PG_UP          &kp PG_DN      &trans
-                            &trans     &trans     &trans    &mkp LCLK       &mkp RCLK       &trans
+&trans  &none     &none     &none      &none      &none     &kp LANGUAGE_1  &mkp LCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1  &kp RIGHT_SHIFT  &kp LCTRL         &kp SEMICOLON      &kp SQT        &trans
+&trans  &none     &none     &none      &none      &none     &kp LC(X)       &kp LC(C)        &kp LC(V)         &kp PG_UP          &kp PG_DN      &trans
+                            &trans     &trans     &trans    &mkp LCLK       &mkp RCLK        &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&kp LG(TAB)             &kp LG(Q)  &kp LG(D)     &kp LG(E)     &kp LG(F)   &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp BACKSPACE     &trans
-&kp LG(LS(LEFT_SHIFT))  &kp LGUI   &kp LALT      &kp LCTRL     &kp LSHFT   &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LANG_HANGEUL  &trans
-&kp LG(U)               &kp LCTRL  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp RG(RIGHT)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)         &kp LG(LA(V))
+&kp LG(TAB)             &kp LG(Q)  &kp LG(D)     &kp LG(E)     &kp LG(F)   &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp DEL        &trans
+&kp LG(LS(LEFT_SHIFT))  &kp LGUI   &kp LALT      &kp LCTRL     &kp LSHFT   &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&kp LG(U)               &kp LCTRL  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp RG(RIGHT)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp LG(LA(V))
                                                  &trans        &kp LC(W)   &kp LC(T)        &mkp LCLK   &mkp RCLK       &mkp MCLK
             >;
         };
