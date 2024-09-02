@@ -84,7 +84,7 @@
 
         kor {
             bindings = <&kp LANG_HANGEUL>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
         };
 
         del {
