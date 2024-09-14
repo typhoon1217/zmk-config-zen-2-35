@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -47,34 +46,9 @@
             key-positions = <5 4>;
         };
 
-        semiq {
-            bindings = <&kp SQT>;
-            key-positions = <8 19>;
-        };
-
-        kor {
-            bindings = <&kp LANG_HANGEUL>;
-            key-positions = <31 32>;
-        };
-
         del {
             bindings = <&kp DEL>;
             key-positions = <2 1>;
-        };
-
-        doubleqt {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 9>;
-        };
-
-        braketl {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <8 7>;
-        };
-
-        braketr {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 8>;
         };
 
         caps {
@@ -106,10 +80,10 @@
 
         num_layer {
             bindings = <
-&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES  &kp SQT   &kp BACKSPACE  &trans
-&trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &kp COLON         &kp RSHFT          &kp RCTRL          &kp RALT  &kp RGUI       &trans
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &kp LANGUAGE_1    &kp CAPS           &trans             &trans    &trans         &trans
-                           &kp DOT  &kp N0  &kp MINUS    &trans            &trans             &trans
+&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp SQT   &kp BACKSPACE  &trans
+&trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &kp COLON       &kp RSHFT        &kp RCTRL          &kp RALT  &kp RGUI       &trans
+&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &kp CAPS        &kp LANGUAGE_1   &trans             &trans    &trans         &trans
+                           &kp DOT  &kp N0  &kp MINUS    &trans          &trans           &trans
             >;
         };
 
@@ -137,33 +111,6 @@
 &trans  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &out OUT_TOG                      &kp RSHFT        &kp RCTRL        &kp RALT         &kp RGUI         &trans
 &trans  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &rgb_ug RGB_COLOR_HSB(20,100,50)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
                          &kp K_APP  &kp SPACE  &kp TAB            &trans                            &trans           &trans
-            >;
-        };
-
-        adjust_layer {
-            bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4         &rgb_ug RGB_TOG                   &rgb_ug RGB_EFF                    &rgb_ug RGB_HUI                    &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                  &trans
-&trans  &trans        &trans         &trans         &none         &ext_power EP_TOG    &rgb_ug RGB_SPI                   &rgb_ug RGB_SPD                    &rgb_ug RGB_HUD                    &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                  &trans
-&trans  &kp LG(W)     &kp LG(LC(B))  &kp LG(LA(B))  &none         &ext_power EP_ON     &rgb_ug RGB_COLOR_HSB(25,100,68)  &rgb_ug RGB_COLOR_HSB(189,100,85)  &rgb_ug RGB_COLOR_HSB(103,100,76)  &rgb_ug RGB_COLOR_HSB(302,100,69)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(69,85,72)
-                                     &bt BT_CLR     &out OUT_USB  &out OUT_BLE         &ext_power EP_TOG                 &trans                             &trans
-            >;
-        };
-
-        inputlayer {
-            bindings = <
-&trans  &new_macro  &new_macro  &none      &none      &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &kp LGUI    &kp LALT    &kp LCTRL  &kp LSHFT  &none     &kp LANGUAGE_1        &kp RIGHT_SHIFT        &kp CAPS          &kp LANGUAGE_1     &kp BACKSPACE  &trans
-&trans  &kp CAPS    &none       &none      &none      &none     &kp LC(Z)             &kp LC(X)              &kp LC(C)         &kp LC(V)          &kp LC(Y)      &trans
-                                &trans     &trans     &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-            >;
-        };
-
-        sym_layer {
-            bindings = <
-&trans  &kp LBRC   &kp AMPS  &kp ASTRK             &kp LPAR   &kp RBRC     &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp COLON  &kp DLLR  &kp PRCNT             &kp CARET  &kp PLUS     &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
-&trans  &kp TILDE  &kp EXCL  &kp AT                &kp HASH   &kp PIPE     &trans  &trans     &trans     &trans    &trans    &trans
-                             &kp LEFT_PARENTHESIS  &kp RPAR   &kp UNDER    &trans  &trans     &trans
             >;
         };
     };
