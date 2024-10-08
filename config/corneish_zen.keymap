@@ -89,10 +89,10 @@
 
         nav_layer {
             bindings = <
-&kp LG(TAB)             &kp LG(Q)           &kp LG(LS(N))     &kp LG(U)     &kp LG(F)      &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp DEL        &trans
-&kp LG(LS(LEFT_SHIFT))  &kp LGUI            &kp LALT          &kp LCTRL     &kp LSHFT      &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
-&kp LG(U)               &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)  &kp LG(ENTER)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp LG(LA(V))
-                                                              &kp LC(T)     &kp LC(W)      &kp LC(W)        &mkp LCLK   &mkp RCLK       &mkp MCLK
+&trans          &kp LG(Q)           &kp LG(LS(N))     &kp LG(U)     &kp LG(F)      &kp LG(T)        &kp INSERT  &kp PAGE_DOWN   &kp PG_UP     &kp HOME   &kp DEL        &trans
+&trans          &kp LGUI            &kp LALT          &kp LCTRL     &kp LSHFT      &kp LG(A)        &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSPACE  &trans
+&kp LEFT_SHIFT  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)  &kp LG(ENTER)    &kp LC(Z)   &kp LC(X)       &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp RIGHT_SHIFT
+                                                      &kp LC(T)     &kp LC(W)      &kp LC(W)        &mkp LCLK   &mkp RCLK       &mkp MCLK
             >;
         };
 
@@ -111,6 +111,15 @@
 &trans  &kp F11  &kp F4  &kp F5     &kp F6     &kp SLCK           &out OUT_TOG                      &kp RSHFT        &kp RCTRL        &kp RALT         &kp RGUI         &trans
 &trans  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &rgb_ug RGB_COLOR_HSB(20,100,50)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
                          &kp K_APP  &kp SPACE  &kp TAB            &trans                            &trans           &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
